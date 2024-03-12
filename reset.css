@@ -1,0 +1,140 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+label,
+fieldset,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Corrigir problemas com alguns navegadores */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Evitar herança indesejada de estilos de fontes e cores */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #000;
+}
+
+/* Corrigir desalinhamento vertical do input em diferentes navegadores */
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+
+/* Normalizar estilos para HTML5 elementos e semântica */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Adicionar bordas e cores a elementos do formulário no Firefox */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Corrigir o espaçamento e deslocamento do button no Safari */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Redefinir comportamento do botão do navegador */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Redefinir a aparência do fieldset para tornar o contorno consistente em todos os navegadores */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* Redefinir legenda margin para acomodar o Internet Explorer */
+legend {
+  border: 0;
+  padding: 0;
+}
+pre {
+  white-space: pre-wrap; 
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+img {
+  vertical-align: top;
+}
+details {
+  display: block;
+}
+template {
+  display: none;
+}
+/* Fim do Reset CSS */ 

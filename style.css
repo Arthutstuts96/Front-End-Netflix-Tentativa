@@ -1,0 +1,200 @@
+body{
+    background-color: #000;
+    color: #fff;
+}
+header{
+    background-color: #000;
+    background-image: radial-gradient(ellipse at center, 
+    rgba(0, 0, 0, 0.5) 0%, 
+    rgba(0, 0, 0, 0.8) 100%), 
+    url(imagens/netflix-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 500px;
+}
+header .top-bar{
+    display: flex;
+    flex-direction: row;
+}
+.top-bar .netflix-logo{
+    position: relative;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50px;
+    top: 13px;
+    width: 300px;
+}
+.top-bar .language-option .select-language{
+    position: absolute;
+    right: 130px;
+    width: 140px;
+    height: 34px;
+    top: 13px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid rgb(122, 122, 122);
+    padding-left: 22px;
+}
+.top-bar .login-button{
+    position: absolute;
+    right: 45px;
+    top: 13px;
+    width: 60px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: red;
+    padding: 7px;
+}
+.top-bar .login-button .entrar-text{
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #fff;
+}
+.central-box{
+    position: relative;
+    text-align: center;
+    top: 150px;
+}
+.central-box .big-paragraph{
+    font-size: 45px;
+    font-weight: bold;
+}
+.central-box .small-paragraph, .normal-paragraph{
+    font-size: 21px;
+    color: #fff;
+}
+.central-box .email-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.central-box .email-box .email-box-input input{
+    background: radial-gradient(ellipse at center, 
+    rgba(0, 0, 0, 0.5) 0%, 
+    rgba(0, 0, 0, 0.8) 100%);
+    color: #fff;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    width: 350px;
+    height: 40px;
+}
+.central-box .email-box .email-box-input input::placeholder{
+    padding-left: 15px;
+}
+.central-box .email-box .lets-go-button button{
+    background: red;
+    color: #fff;
+    border-radius: 3px;
+    width: 170px;
+    height: 44px;
+}
+.central-box .email-box .lets-go-button button p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.gradient-assignature{
+    position: relative;
+    top: 230px;
+    height: 140px;
+    margin: 0 50px 0 50px;
+    background: radial-gradient(circle, #bd3a3a, #02022e);
+}
+.gradient-assignature .mid-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gradient-assignature #pipoca{
+    width: 100px;
+    height: 100px;
+    padding: 20px 0 0 50px;
+}
+.gradient-assignature .mid-information .text{
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.gradient-assignature .mid-information .text .big-paragraph{
+    font-size: 20px;
+    font-weight: bold;
+}
+.gradient-assignature .mid-information .text a {
+    color: cyan;
+}
+/*----------------------------------------*/
+main{
+    height: 3100px;
+    width: auto;
+}
+main .main-content{
+    display: flex;
+    flex-direction: column;
+    background: #292929;
+    margin-top: 200px;
+    height: 2300px;
+}
+.main-content .content{
+    background: #000;
+    height: 2100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-content .text .big-text{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.main-content .text .small-text{
+    color: #fff;
+    font-size: 22px;
+    font-weight: lighter;
+}
+main .main-content img{
+   padding-bottom: 30px;
+   padding-right: 240px;
+   padding-top: 30px;
+}
+main .main-content #first .text{
+    margin-top: 150px;
+    margin-left: 200px;
+}
+main .main-content #second .text{
+    margin-top: 150px;
+    margin-right: 200px;
+    margin-left: -200px;
+}
+main .main-content #second img{
+    margin-left: 250px;
+}
+main .main-content #third .text{
+    margin-top: 150px;
+    margin-left: 200px;
+}
+main .main-content #fourth .text{
+    margin-top: 150px;
+    margin-right: 200px;
+    margin-left: -210px;
+}
+main .main-content #fourth img{
+    margin-left: 255px;
+}
+
+@media (max-width: 400px) {
+    .main-content .big-text, .small-text {
+        position: relative;
+        width: 100%;
+        transform: none;
+    }
+}
